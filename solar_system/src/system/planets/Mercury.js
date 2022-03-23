@@ -1,23 +1,19 @@
+import { useEffect, useState } from "react";
 import { NoRingPlanet } from "./template/NoRingPlanet";
 
 export const Mercury = ({ sunRef }) => {
-    let x_distance = 0;
-    let y_distance = 0;
-    let z_distance = 0;
-    if (sunRef == null) {
-        x_distance = sunRef.current.position.x + 5;
-        y_distance = sunRef.current.position.y + 5;
-        z_distance = sunRef.current.position.z + 0;
-    } else {
-        x_distance = 4;
-        y_distance = 4;
-        z_distance = 2;
-    }
-    const distance = [x_distance, y_distance, z_distance];
 
-    //useState
+    const [xDist, setXDist] = useState(4)
+    const [yDist, setYDist] = useState(4)
+    const [zDist, setZDist] = useState(2)
 
-    //Put code inside useEffect
+    useEffect(()=>{
+        setXDist(sunRef.current.position.x + 4);
+        setYDist(sunRef.current.position.y + 4);
+        setZDist(sunRef.current.position.z + 2);
+    })
+
+    const distance = [xDist, yDist, zDist];
 
     return (
         <>
