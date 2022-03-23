@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from "react";
 import { OrbitControls, Stars } from '@react-three/drei'
+import { SolarSystem } from './system/SolarSystem';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <directionalLight />
         <OrbitControls />
         <Stars />
+        <SolarSystem />
       </Suspense>
     </Canvas>
   );
