@@ -10,7 +10,7 @@ export const NoRingPlanet = ({sunRef, distanceFromSun, radius=10, texture}) => {
         let theta = (time)*Math.PI/3;
         planetRef.current.rotation.y = planetRef.current.rotation.y+0.002
         planetRef.current.position.x = sunRef.current.position.x + (distanceFromSun*(Math.sin(theta)));
-        planetRef.current.position.y = sunRef.current.position.y + (distanceFromSun*(Math.sin(theta)));
+        planetRef.current.position.y = sunRef.current.position.y + -(distanceFromSun*(Math.cos(theta)));
         planetRef.current.position.z = sunRef.current.position.z + (distanceFromSun*(Math.cos(theta)));
     })
 
