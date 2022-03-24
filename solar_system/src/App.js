@@ -6,13 +6,13 @@ import { SolarSystem } from './system/SolarSystem';
 function App() {
 
   return (
-    <Canvas camera={{position: [0, 0, 150]}}>
+    <Canvas camera={{position: [0, 0, 300]}}>
       <Suspense fallback={null}>
         <pointLight position={[10, 10, 10]} />
         <ambientLight intensity={0.4} />
         <directionalLight />
         <OrbitControls />
-        <Stars />
+        <Stars depth={250} />
         <SolarSystem />
       </Suspense>
     </Canvas>
