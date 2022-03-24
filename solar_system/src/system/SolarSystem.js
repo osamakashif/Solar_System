@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import { Earth } from "./planets/Earth";
+import { Mars } from "./planets/Mars";
 import { Mercury } from "./planets/Mercury";
 import { Venus } from "./planets/Venus";
 // import { Planet } from "./planets/Planet";
@@ -13,6 +14,7 @@ export const SolarSystem = () => {
             <Mercury sunRef={sunRef}/>
             <Venus sunRef={sunRef} />
             <Earth sunRef={sunRef} />
+            <Mars sunRef={sunRef} />
         </>
     )
 }
