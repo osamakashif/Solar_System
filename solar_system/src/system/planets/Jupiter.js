@@ -1,5 +1,5 @@
 import { NoRingPlanet } from "./template/NoRingPlanet";
-import { sizeJupiter, distSunJupiter } from "../values/measurements";
+import { sizeJupiter, distSunJupiter, speedJupiter } from "../values/measurements";
 import JupiterSurface from "./surfaces/jupiter.jpg"
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
@@ -10,7 +10,7 @@ export const Jupiter = ({ sunRef }) => {
 
     return (
         <>
-            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunJupiter} radius={sizeJupiter} texture={texture} />
+            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunJupiter} radius={sizeJupiter} speedCoeff={speedJupiter} texture={texture} />
         </>
     )
 

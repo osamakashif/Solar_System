@@ -1,4 +1,4 @@
-import { sizeSaturn, distSunSaturn } from "../values/measurements";
+import { sizeSaturn, distSunSaturn, speedSaturn } from "../values/measurements";
 import SaturnSurface from "./surfaces/saturn.jpg"
 import SaturnRing from "./surfaces/saturn_ring.png"
 import { useLoader } from "@react-three/fiber";
@@ -18,7 +18,7 @@ export const Saturn = ({ sunRef }) => {
 
     useFrame(({ clock }) => {
         const time = clock.getElapsedTime();
-        let theta = (time) * Math.PI / 3;
+        let theta = speedSaturn * (time) * Math.PI ;
         planetRef.current.rotation.y = planetRef.current.rotation.y + 0.002
         planetRef.current.position.x = sunRef.current.position.x + (distSunSaturn * (Math.sin(theta)));
         planetRef.current.position.y = sunRef.current.position.y + -(distSunSaturn * (Math.cos(theta)));
@@ -35,7 +35,7 @@ export const Saturn = ({ sunRef }) => {
                 <meshBasicMaterial attach="material" map={texture} />
             </mesh>
             <mesh ref={ringRef} >
-                <torusBufferGeometry args={[sizeSaturn*1.3, 0.4, 8, 40 ]} />
+                <torusBufferGeometry args={[sizeSaturn*1.3, 3, 2, 40 ]} />
                 <meshBasicMaterial attach="material" map={ringTexture} />
             </mesh>
         </>

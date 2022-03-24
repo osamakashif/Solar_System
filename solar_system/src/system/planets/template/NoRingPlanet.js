@@ -1,20 +1,20 @@
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react"
 
-export const NoRingPlanet = ({sunRef, distanceFromSun, radius=10, texture}) => {
-    
+export const NoRingPlanet = ({ sunRef, distanceFromSun, radius = 10, speedCoeff = 1, texture }) => {
+
     const planetRef = useRef();
 
-    useFrame(({clock})=>{
+    useFrame(({ clock }) => {
         const time = clock.getElapsedTime();
-        let theta = (time)*Math.PI/3;
-        planetRef.current.rotation.y = planetRef.current.rotation.y+0.002
-        planetRef.current.position.x = sunRef.current.position.x + (distanceFromSun*(Math.sin(theta)));
-        planetRef.current.position.y = sunRef.current.position.y + -(distanceFromSun*(Math.cos(theta)));
-        planetRef.current.position.z = sunRef.current.position.z + (distanceFromSun*(Math.cos(theta)));
+        let theta = speedCoeff *(time) * Math.PI;
+        planetRef.current.rotation.y = planetRef.current.rotation.y + 0.002
+        planetRef.current.position.x = sunRef.current.position.x + (distanceFromSun * (Math.sin(theta)));
+        planetRef.current.position.y = sunRef.current.position.y + -(distanceFromSun * (Math.cos(theta)));
+        planetRef.current.position.z = sunRef.current.position.z + (distanceFromSun * (Math.cos(theta)));
     })
 
-    const MeshToRender =() => {
+    const MeshToRender = () => {
         if (texture == null) {
             return (
                 <meshPhongMaterial color="red" />
@@ -28,7 +28,7 @@ export const NoRingPlanet = ({sunRef, distanceFromSun, radius=10, texture}) => {
 
     return (
         <mesh ref={planetRef} position={distanceFromSun} >
-            <sphereBufferGeometry args={[radius]}/>
+            <sphereBufferGeometry args={[radius]} />
             <MeshToRender />
         </mesh>
     )

@@ -1,5 +1,5 @@
 import { NoRingPlanet } from "./template/NoRingPlanet";
-import { sizeEarth, distSunEarth } from "../values/measurements";
+import { sizeEarth, distSunEarth, speedEarth } from "../values/measurements";
 import EarthSurface from "./surfaces/earth.jpg"
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
@@ -10,7 +10,7 @@ export const Earth = ({ sunRef }) => {
 
     return (
         <>
-            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunEarth} radius={sizeEarth} texture={texture} />
+            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunEarth} radius={sizeEarth} speedCoeff={speedEarth} texture={texture} />
         </>
     )
 

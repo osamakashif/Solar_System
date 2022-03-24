@@ -1,5 +1,5 @@
 import { NoRingPlanet } from "./template/NoRingPlanet";
-import { sizeVenus, distSunVenus } from "../values/measurements";
+import { sizeVenus, distSunVenus, speedVenus } from "../values/measurements";
 import VenusSurface from "./surfaces/venus.jpg"
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
@@ -10,7 +10,7 @@ export const Venus = ({ sunRef }) => {
 
     return (
         <>
-            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunVenus} radius={sizeVenus} texture={texture} />
+            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunVenus} radius={sizeVenus} speedCoeff={speedVenus} texture={texture} />
         </>
     )
 
