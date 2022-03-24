@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
 import { NoRingPlanet } from "./template/NoRingPlanet";
+import { sizeMercury, distSunMercury } from "../values/measurements";
 
 export const Mercury = ({ sunRef }) => {
 
     return (
         <>
-            <NoRingPlanet sunRef={sunRef} distanceFromSun={35} radius={4} />
+            <NoRingPlanet sunRef={sunRef} distanceFromSun={distSunMercury} radius={sizeMercury} />
         </>
     )
 
