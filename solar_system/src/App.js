@@ -6,7 +6,7 @@ import { SolarSystem } from './system/SolarSystem';
 function App() {
 
   return (
-    <Canvas camera={{position: [0, 0, 300]}}>
+    <Canvas camera={{position: [-30, 350, 300]}}>
       <Suspense fallback={null}>
         <pointLight position={[10, 10, 10]} />
         <ambientLight intensity={0.4} />
