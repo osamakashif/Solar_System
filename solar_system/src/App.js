@@ -11,7 +11,7 @@ function App() {
         <pointLight position={[10, 10, 10]} />
         <ambientLight intensity={0.4} />
         <directionalLight />
-        <OrbitControls />
+        <OrbitControls minDistance={25} maxDistance={600}/>
         <Stars depth={250} />
         <SolarSystem />
       </Suspense>
