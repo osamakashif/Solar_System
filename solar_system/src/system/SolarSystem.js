@@ -7,7 +7,6 @@ import { Neptune } from "./planets/Neptune";
 import { Saturn } from "./planets/Saturn";
 import { Uranus } from "./planets/Uranus";
 import { Venus } from "./planets/Venus";
-// import { Planet } from "./planets/Planet";
 import { Sun } from "./sun/Sun";
 
 export const SolarSystem = () => {
