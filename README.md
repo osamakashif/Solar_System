@@ -26,6 +26,24 @@ Rotating and zooming after a while:
 
 ![ShiftedImage](./readme_images/shifted.jpg)
 
+## To run the application
+
+### To install
+
+You need to install Node.js on your device if you do not have it already.
+You need to have Node and npm working on your device.
+The application was developed with node version 16.14.0, and npm version 8.3.1.
+
+Once you have those you can use the steps to run the application.
+
+### Steps to run
+
+1. Clone the repository;
+2. Open the terminal in the `solar_system` directory;
+3. Run `npm install`;
+4. Run `npm start`.
+
+With these steps the application should be running on your device.
 
 ## References
 
