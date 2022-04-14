@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Solar_System/static/css/main.cdcbbde7.css",
+    "main.js": "/Solar_System/static/js/main.32babcc9.js",
+    "static/js/787.d96af89e.chunk.js": "/Solar_System/static/js/787.d96af89e.chunk.js",
+    "static/media/venus.jpg": "/Solar_System/static/media/venus.4b03f2d64e23f1c2b6a0.jpg",
+    "static/media/mercury.jpg": "/Solar_System/static/media/mercury.8f80953b60adac9859cd.jpg",
+    "static/media/sun.jpg": "/Solar_System/static/media/sun.4b569137334e61081651.jpg",
+    "static/media/mars.jpg": "/Solar_System/static/media/mars.33960f5af615e67309e5.jpg",
+    "static/media/jupiter.jpg": "/Solar_System/static/media/jupiter.3e84533e157949a99de4.jpg",
+    "static/media/earth.jpg": "/Solar_System/static/media/earth.981cc3e3660e809249a3.jpg",
+    "static/media/neptune.jpg": "/Solar_System/static/media/neptune.6dd112666aad0cd68958.jpg",
+    "static/media/saturn.jpg": "/Solar_System/static/media/saturn.3b074d8e6087d14e4225.jpg",
+    "static/media/uranus.jpg": "/Solar_System/static/media/uranus.428ad3f979bd783a27d1.jpg",
+    "static/media/saturn_ring.png": "/Solar_System/static/media/saturn_ring.dd66583fe1ee246a1d5b.png",
+    "index.html": "/Solar_System/index.html",
+    "main.cdcbbde7.css.map": "/Solar_System/static/css/main.cdcbbde7.css.map",
+    "main.32babcc9.js.map": "/Solar_System/static/js/main.32babcc9.js.map",
+    "787.d96af89e.chunk.js.map": "/Solar_System/static/js/787.d96af89e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdcbbde7.css",
+    "static/js/main.32babcc9.js"
+  ]
+}
