@@ -10,6 +10,8 @@ The distances and sizes of the sun and planets aare not exactly relative since t
 
 Effectively, this is a model to show use of the React Three.js libraries and not to model the solar system completely accurately.
 
+The model is currently displayed on https://osamakashif.github.io/Solar_System/.
+
 ### Model
 
 The images of the final model are as follows.
