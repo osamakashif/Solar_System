@@ -67,37 +67,37 @@ The images are as follows.
 
 Sun:
 
-![Sun](./solar_system/src/system/sun/surfaces/sun.jpg)
+![Sun](./src/system/sun/surfaces/sun.jpg)
 
 Mercury:
 
-![Mercury](./solar_system/src/system/planets/surfaces/mercury.jpg)
+![Mercury](./src/system/planets/surfaces/mercury.jpg)
 
 Venus:
 
-![Venus](./solar_system/src/system/planets/surfaces/venus.jpg)
+![Venus](./src/system/planets/surfaces/venus.jpg)
 
 Earth:
 
-![Earth](./solar_system/src/system/planets/surfaces/earth.jpg)
+![Earth](./src/system/planets/surfaces/earth.jpg)
 
 Mars:
 
-![Mars](./solar_system/src/system/planets/surfaces/mars.jpg)
+![Mars](./src/system/planets/surfaces/mars.jpg)
 
 Jupiter:
 
-![Jupiter](./solar_system/src/system/planets/surfaces/jupiter.jpg)
+![Jupiter](./src/system/planets/surfaces/jupiter.jpg)
 
 Saturn:
 
-![Saturn](./solar_system/src/system/planets/surfaces/saturn.jpg)
-![SaturnRing](./solar_system/src/system/planets/surfaces/saturn_ring.png)
+![Saturn](./src/system/planets/surfaces/saturn.jpg)
+![SaturnRing](./src/system/planets/surfaces/saturn_ring.png)
 
 Uranus:
 
-![Uranus](./solar_system/src/system/planets/surfaces/uranus.jpg)
+![Uranus](./src/system/planets/surfaces/uranus.jpg)
 
 Neptune:
 
-![Neptune](./solar_system/src/system/planets/surfaces/neptune.jpg)
+![Neptune](./src/system/planets/surfaces/neptune.jpg)
